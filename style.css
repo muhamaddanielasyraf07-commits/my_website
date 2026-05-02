@@ -35,15 +35,6 @@ iframe {
     border-radius: 10px;
 }
 
-#sec1{
-    border: 2px solid lightskyblue;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    width: 300px;
-    margin: 75px
-}
-
 #masa{
     clear: both;
 }
@@ -54,4 +45,37 @@ footer{
 
 .bold{
     font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to stack on small screens */
+    width: 100%;
+    gap: 20px;
+}
+
+.image-box {
+    flex: 7; /* 70% width on large screens */
+    min-width: 300px; /* Optional: forces wrap sooner */
+}
+
+.image-box img {
+    width: 100%; /* Makes image responsive */
+    height: auto;
+    display: block;
+}
+
+.text-box {
+    flex: 3; /* 30% width on large screens */
+    border: 2px solid #000; /* Text box border */
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 200px;
+}
+
+/* When screen is 768px or smaller */
+ @media (max-width: 768px) {
+    .image-box, .text-box {
+      flex: 1 1 100%; /* Force full width to make them stack */
+    }
 }
