@@ -1,28 +1,47 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <title>Website Pertandingan Inovasi</title>
     </head>
 
     <body>
-        <header>PERTANDINGAN INOVASI</header>
+
+        <header><h1>PERTANDINGAN INOVASI</h1></header>
     
         <nav>
-            <a href = "index.html">HOME</a> | <a href = "kategori.html">KATEGORI</a> | <a href = "daftar.html">PENDAFTARAN</a>
+            <a href = "index.html"><button>HOME</button></a>
+            <a href = "kategori.html"><button>KATEGORI</button></a>
+            <a href = "daftar.html"><button>PENDAFTARAN</button></a>
         </nav>
-    
+
+        <hr>
+
+        <div>
+            <p id="desc">Pertandingan inovasi ini dianjurkan sebagai platform untuk mencungkil idea kreatif dan menghasilkan penyelesaian baharu yang memberi impak kepada masyarakat. Ia bertujuan menggalakkan kreativiti, memupuk pemikiran kritis serta mencungkil bakat dalam bidang reka cipta. Diharapkan program ini dapat melahirkan generasi yang inovatif dan berdaya saing, serta menghasilkan idea yang boleh dikembangkan demi manfaat bersama.
+</p>
+        </div>
         <section>
-            <p>Tarikh : 12/08/2026
-            <p>Waktu :  9:00 A.M.
-            <p>Tempat : Kompleks Akademik</p>
+            <div id="sec1">
+                <p>Tarikh : <span class="bold">12/08/2026</span></p>
+                <p>Waktu :  <span class="bold">9:00 A.M. - 12:00 P.M.</span></p>
+                <p>Tempat : <span class="bold">Kompleks Akademik</span></p>
+                <hr>
+                KATEGORI
+                <ol type="A">
+                    <li><span class="bold">Membuat video berkaitan teknologi</span></li>
+                    <br>
+                    <li><span class="bold">Membuat poster berkaitan teknologi</span></li>
+                </ol>
+            </div>
         </section>
-    
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.392210374568!2d101.53068947497377!3d3.724355196249561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cb89c69b82a3ab%3A0x7fa38dc86ca7823!2sKompleks%20Akademik%20UPSI!5e0!3m2!1sen!2smy!4v1777512262314!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    
-    
-        <h1>KIRAAN MASA PETANDINGAN BERMULA </h1>
-        <p id="timer"></p>
+        <br>
+
+        <div id="masa">
+            <h1>KIRAAN MASA PETANDINGAN BERMULA</h1>
+            <p id="timer"></p>
+        </div>
     
         <script>
             let targetDate = new Date("Aug 12, 2026 09:00:00").getTime();
@@ -41,6 +60,8 @@
     
             }, 1000);
         </script>
+
+
     
         <footer>
             <p> Disclaimer : Laman web ini hanya memenuhi keperluan kursus Asas Pembangunan Web</p>

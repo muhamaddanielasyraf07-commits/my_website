@@ -1,3 +1,57 @@
+header {
+    text-align: center;
+    font-family: sans-serif, arial;
+    color: white;
+}
+
+body{
+    font-family: sans-serif, arial;
+    background-image: linear-gradient( to left, rgba(0,122,184,1) 24.4%, rgba(46,0,184,0.88) 80.5% );
+    color: white;
+    text-align: center;
+}
+
 nav {
-  border: 5px solid;
+    border-radius: 10px;
+    font-family: sans-serif, arial;
+}
+
+#desc{
+    margin: 75px;
+    margin-top: 20px;
+    font-size: larger;
+}
+
+button {
+    background-color: linear-gradient(skyblue, lightgreen );
+    padding: 12px 25px;
+    outline: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+iframe {
+    border: 5px solid turquoise;
+    border-radius: 10px;
+}
+
+#sec1{
+    border: 2px solid lightskyblue;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: left;
+    width: 300px;
+    margin: 75px
+}
+
+#masa{
+    clear: both;
+}
+
+footer{
+    clear: both;
+}
+
+.bold{
+    font-weight: bold;
 }
