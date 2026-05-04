@@ -3,14 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kategori Pertandingan</title>
+    <title>Event Categories</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    <header><h1>KATEGORI</h1></header>
-    <nav>
-        <a href = "index.html"><button>HOME</button></a><a href = "kategori.html"><button>KATEGORI</button></a><a href = "daftar.html"><button>PENDAFTARAN</button></a>
+    <nav class="main-nav">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="kategori.html"><i class="fa-solid fa-list"></i> Categories</a>
+        <a href="daftar.html"><i class="fa-solid fa-pen-to-square"></i> Register</a>
     </nav>
-    Ini Page kategori
+
+<div class="category-page">
+
+    <h1>
+        <i class="fa-solid fa-list"></i>
+        Event Categories
+    </h1>
+
+    <div class="card">
+        <i class="fa-solid fa-school"></i>
+        <h2>Secondary School</h2>
+        <p>For students from secondary school level.</p>
+        <a href="daftar.html" class="join-btn">Join Category</a>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-user-graduate"></i>
+        <h2>Higher Education</h2>
+        <p>For university and college students.</p>
+        <a href="daftar.html" class="join-btn">Join Category</a>
+    </div>
+
+</div>
+
+
+<!-- FOOTER -->
+    <footer>
+        <p>© 2026 Innovation Event</p>
+    </footer>
+
 </body>
 </html>
