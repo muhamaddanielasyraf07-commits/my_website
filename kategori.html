@@ -12,39 +12,89 @@
 </head>
 
 <body>
+
     <nav class="main-nav">
         <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
         <a href="kategori.html"><i class="fa-solid fa-list"></i> Categories</a>
         <a href="daftar.html"><i class="fa-solid fa-pen-to-square"></i> Register</a>
     </nav>
-<div class="category-page">
 
-    <h1>
-        <i class="fa-solid fa-list"></i>
-        Event Categories
-    </h1>
+    <!-- ✅ ADD THIS WRAPPER -->
+    <div class="main-content">
 
-    <div class="card">
-        <i class="fa-solid fa-school"></i>
-        <h2>Secondary School</h2>
-        <p>For students from secondary school level.</p>
-        <a href="daftar.html" class="join-btn">Join Category</a>
+        <div class="category-page">
+
+            <div class="card">
+                <div class="accordion-header">
+                    <i class="fa-solid fa-school"></i>
+                    <h2>Secondary School</h2>
+                </div>
+
+                <div class="accordion-content">
+                    <h3>For students from secondary school level.</h3>
+                    <ul>
+                        <li>Must be currently enrolled</li>
+                        <li>Group of 3–5 participants</li>
+                        <li>Make a poster or a video about your innovation</li>
+                        <li>Submit before deadline</li>
+                    </ul>
+                    <h3>Prize.</h3>
+                    <ol>
+                        <li>Cash prize (RM 500)</li>
+                        <li>Cash prize (RM 300)</li>
+                        <li>Cash prize (RM 100)</li>
+
+                    </ol>
+
+                    <a href="daftar.html" class="join-btn">Join Category</a>
+                    <br>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="accordion-header">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <h2>Higher Education</h2>
+                </div>
+
+                <div class="accordion-content">
+                    <p>For university and college students.</p>
+                    <ul>
+                        <li>Open to diploma/degree students</li>
+                        <li>Max 5 members</li>
+                        <li>Original innovation only</li>
+                    </ul>
+                    <h3>Prize.</h3>
+                    <ol>
+                        <li>Cash prize (RM 5000)</li>
+                        <li>Cash prize (RM 2000)</li>
+                        <li>Cash prize (RM 1000)</li>
+                    </ol>
+
+                    <a href="daftar.html" class="join-btn">Join Category</a>
+                </div>
+            </div>
+
+        </div>
+
     </div>
+    <!-- ✅ END wrapper -->
 
-    <div class="card">
-        <i class="fa-solid fa-user-graduate"></i>
-        <h2>Higher Education</h2>
-        <p>For university and college students.</p>
-        <a href="daftar.html" class="join-btn">Join Category</a>
-    </div>
-
-    <!-- FOOTER -->
     <footer>
         <p>© 2026 Innovation Event</p>
-        Laman web ini hanya memenuhi keperluan Asas Pembanguna Web
+        <p>Laman web ini hanya memenuhi keperluan Asas Pembangunan Web</p>
     </footer>
 
-</div>
+<script>
+const cards = document.querySelectorAll(".category-page .card");
+
+cards.forEach(card => {
+    card.querySelector(".accordion-header").addEventListener("click", () => {
+        cards.forEach(c => c.classList.remove("active"));
+        card.classList.add("active");
+    });
+});
+</script>
 
 </body>
 </html>
